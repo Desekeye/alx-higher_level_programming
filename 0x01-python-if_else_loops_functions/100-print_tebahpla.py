@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
+for i in range(122, 97, -1):
     if i % 2 is 0:
         num = i
     else:
