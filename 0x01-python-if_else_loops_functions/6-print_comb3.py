@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-for a in range(0, 9):
-    for b in range(1 + a, 10):
-        print("{:d}{:d}".format(a, b), end="")
-        if (a + b) is not 17:
-            print(",", end=" ")
-print()
+for i in range(0, 9):
+    for j in range(1, 10):
+        if j + i > 9:
+            continue
+        elif i == 0 and j == 9:
+            print("{}{}".format(i, j), end=", ")
+        elif i != 8 and j != 9:
+            print("{}{}".format(i, j + i), end=", ")
+print("{}".format(89))
