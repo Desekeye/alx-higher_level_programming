@@ -4,6 +4,7 @@ sy_my_name module
 This function prints first and last name
 """
 
+
 def say_my_name(first_name, last_name=""):
     """Return: the first and last name
     Args:
