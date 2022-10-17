@@ -1,9 +1,7 @@
 #!/usr/bin/pyhton3
-"""
-Class Rectangle
-"""
+"""Defines a Rectangle class."""
 
 
-class rectangle:
-  """class type rectangle"""
-  pass
+class Rectangle:
+    """Represent a rectangle."""
+    pass
