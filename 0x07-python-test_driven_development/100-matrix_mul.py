@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Matrix_mul 
+Matrix_mul
 Function that multiplies 2 matrix
 """
 
