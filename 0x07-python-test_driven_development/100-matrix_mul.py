@@ -4,6 +4,7 @@ Matrix_mul
 Function that multiplies 2 matrix
 """
 
+
 def matrix_mul(m_a, m_b):
     """
     Return: a matrix with the product of m_a and m_b
