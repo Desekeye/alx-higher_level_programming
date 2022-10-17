@@ -4,6 +4,7 @@ text_indentation module
 Function that print a text with new lines after using '.?:'
 """
 
+
 def text_indentation(text):
     """Return text with 2 new lines after using '.?:'
     Args:
