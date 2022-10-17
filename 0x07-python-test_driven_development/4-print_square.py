@@ -4,6 +4,7 @@ print_square module
 This function print a square using '#'
 """
 
+
 def print_square(size):
     """Return: the n '#' of squares
     Args:
