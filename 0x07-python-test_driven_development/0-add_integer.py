@@ -4,6 +4,7 @@ add_integer
 A function that adds 2 integers
 """
 
+
 def add_integer(a, b=98):
     """Return the integer addition of a and b
     Raise: TypeError
