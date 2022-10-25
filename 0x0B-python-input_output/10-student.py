@@ -1,15 +1,28 @@
 #!/usr/bin/python3
 """
-Write a function that returns
-the dictionary description with
-simple data structure (list, dictionary, string, integer and boolean)
-for JSON serialization of an object
+Write a class Student that defines a student
 """
 
 
-def class_to_json(obj):
+class Student:
     """
-    Returns dictionary description of the data structure
+    Student class
     """
 
-    return vars(obj)
+    def __init__(self, first_name, last_name, age):
+        
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self, attrs=None):
+        """
+        Retrieves dict
+        """
+        if attrs is None:
+            return self.__dict__
+        my_dict = {}
+        for items in attrs:
+            if hasattr(self, items):
+                my_dict[items] = getattr(self, items)
+        return 
