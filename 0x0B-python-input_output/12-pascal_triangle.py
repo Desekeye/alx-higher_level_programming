@@ -1,28 +1,13 @@
 #!/usr/bin/pyhton3
-"""
-Write a class Student that defines a student
-"""
 
+def pascal_triangle(n):
 
-class Student:
-    """
-    Student class
-    """
-
-    def __init__(self, first_name, last_name, age):
-      
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-
-    def to_json(self, attrs=None):
-        '''
-        Retrieves dict
-        '''
-        if attrs is None:
-            return self.__dict__
-        my_dict = {}
-        for items in attrs:
-            if hasattr(self, items):
-                my_dict[items] = getattr(self, items)
-        return my_dict
+    init_number = [[1]]
+    while len(init_number) != n:
+        next_number = init_number[-1]
+        store_number = [1]
+        for i in range(len(next_number) - 1):
+            store_number.append(next_number[i] + next_number[i + 1])
+        store_number.append(1)
+        init_number.append(store_number)
+    return 
