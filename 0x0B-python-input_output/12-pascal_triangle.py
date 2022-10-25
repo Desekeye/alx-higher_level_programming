@@ -1,13 +1,20 @@
 #!/usr/bin/pyhton3
+"""Defines a Pascal's Triangle function."""
+
 
 def pascal_triangle(n):
+    """Represent Pascal's Triangle of size n.
+    Returns a list of lists of integers representing the triangle.
+    """
+    if n <= 0:
+        return []
 
-    init_number = [[1]]
-    while len(init_number) != n:
-        next_number = init_number[-1]
-        store_number = [1]
-        for i in range(len(next_number) - 1):
-            store_number.append(next_number[i] + next_number[i + 1])
-        store_number.append(1)
-        init_number.append(store_number)
-    return 
+    triangles = [[1]]
+    while len(triangles) != n:
+        tri = triangles[-1]
+        tmp = [1]
+        for i in range(len(tri) - 1):
+            tmp.append(tri[i] + tri[i + 1])
+        tmp.append(1)
+        triangles.append(tmp)
+    return triangles
