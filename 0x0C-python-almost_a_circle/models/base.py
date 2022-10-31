@@ -17,7 +17,7 @@ class Base:
     """
 
     __nb_objects = 0
-    
+
     def __int__(self, id=None):
         """Initialized a new Base
 
