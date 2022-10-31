@@ -30,12 +30,6 @@ class Base():
         create(cls, **dictionary)
     """
     __nb_objects = 0
-<<<<<<< HEAD
-
-    def __int__(self, id=None):
-        """Initialized a new Base
-=======
->>>>>>> 8db0822f7c7897565638ced6d8d9fe25e24ffc5c
 
     def __init__(self, id=None):
         """Initialize id, increment class attribute if no id and set as id"""
