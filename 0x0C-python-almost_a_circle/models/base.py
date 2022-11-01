@@ -86,8 +86,8 @@ class Base():
             for i, dic in enumerate(instances):
                 l.append(cls.create(**instances[i]))
                 except IOError:
-            pass
-        return l
+                    pass
+                return l
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
@@ -121,7 +121,7 @@ class Base():
                 o = cls.create(**dic)
                 objs.append(o)
         return objs
-    
+
         @staticmethod
     def draw(list_rectangles, list_squares):
 
