@@ -85,7 +85,7 @@ class Base():
                 instances = cls.from_json_string(f.read())
             for i, dic in enumerate(instances):
                 l.append(cls.create(**instances[i]))
-                except IOError:
+                except:
                     pass
                 return l
 
