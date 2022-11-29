@@ -13,8 +13,7 @@ Saves to CSV and loads from CSV file
 
 import json
 import csv
-import turtle
-
+         
 
 class Base():
     """
@@ -85,9 +84,9 @@ class Base():
                 instances = cls.from_json_string(f.read())
             for i, dic in enumerate(instances):
                 l.append(cls.create(**instances[i]))
-                except IOError:
-                    pass
-                return l
+        except:
+            pass
+        return l
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
@@ -121,36 +120,3 @@ class Base():
                 o = cls.create(**dic)
                 objs.append(o)
         return objs
-
-        @staticmethod
-    def draw(list_rectangles, list_squares):
-
-        turt = turtle.Turtle()
-        turt.pensize(2)
-        turt.shape("arrow")
-
-        turt.color("navy")
-        for rectangle in list_rectangles:
-            turt.showturtle()
-            turt.up()
-            turt.goto(rectangle.x, rectangle.y)
-            turt.down()
-            for i in range(2):
-                turt.forward(rectangle.width)
-                turt.left(90)
-                turt.forward(rectangle.height)
-                turt.left(90)
-            turt.hideturtle()
-
-        turt.color("Orange Red")
-        for square in list_squares:
-            turt.showturtle()
-            turt.up()
-            turt.goto(square.x, square.y)
-            turt.down()
-            for i in range(4):
-                turt.forward(square.width)
-                turt.left(90)
-            turt.hideturtle()
-
-        turtle.done()
