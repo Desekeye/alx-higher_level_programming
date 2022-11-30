@@ -1,1 +1,1 @@
-this repository is for high level programming staring python
+this repository is for high level programming staring python, mysql,
