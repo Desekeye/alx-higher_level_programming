@@ -4,10 +4,11 @@
 import sys
 import urllib.request
 
+def fetcher():
+    """fetcher"""
+    with urllib.request.urlopen(sys.argv[1]) as response:
+        header = response.info()
+        print(header["X-Request-Id"])
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    fetcher()
