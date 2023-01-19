@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" script that takes in a URL and an email, sends a POST request to the passed URL with the
-email as a parameter, and displays the body of the response (decoded in utf-8) """
+"""script that takes in a URL and an email, sends email"""
 import urllib.request
 import urllib.parse
 import sys
@@ -16,6 +15,5 @@ def sender():
         html = response.read()
         print(html.decode("utf-8"))
 
-       
 if __name__ == "__main__":
     sender()
