@@ -12,5 +12,6 @@ def fetcher():
         print("\t- content: {}".format(html))
         print("\t- utf8 content: {}".format(html.decode("utf-8")))
 
+
 if __name__ == "__main__":
     fetcher()
