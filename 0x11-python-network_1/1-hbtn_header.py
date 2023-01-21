@@ -10,6 +10,6 @@ def fetcher():
         header = response.info()
         print(header["X-Request-Id"])
 
-        
+
 if __name__ == "__main__":
     fetcher()
