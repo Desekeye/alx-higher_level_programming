@@ -1,7 +1,4 @@
 #!/usr/bin/node
-<<<<<<< HEAD
-
-=======
 const request = require('request');
 const url = 'http://swapi.co/api/films/';
 let id = parseInt(process.argv[2], 10);
@@ -31,4 +28,3 @@ request(url, function (err, response, body) {
     }
   }
 });
->>>>>>> 678f460647f57212263a9ed8bdb026a0e07f688d
